@@ -9,5 +9,5 @@ In Order  to get b1 and b2, we need to multiply the weights to corresponding inp
  
 ![image](https://user-images.githubusercontent.com/72623963/136716784-8f13a4e6-a14d-4869-a4e7-3a2241f746db.png)
 
-Theoretically, if we could get perfect weight and bias then the b1 and b2 would have a perfect output. So, we could say that the process of achieving the best output is the process of founding the best bias and weight.  -=---
+Theoretically, if we could get perfect weight and bias then the b1 and b2 would have a perfect output. So, we could say that the process of achieving the best output is the process of founding the best bias and weight. Since we have the expect result b1 and b2, we can compare it to the result get from the neural network to get a loss, which is also known as the lost layer, and use the loss to revise our neural network. Due to our result is linear, we need to use activation layer to make the result become a non-linear one.
 

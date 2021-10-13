@@ -4,7 +4,7 @@ This program is using **Stochastic Gradient Descent** (**SGD**) algorithm to bui
 # How to tune the NN 
 At first, we try single fully connected network and get 92.67% accuracy in 150 epochs with 0.0425 loss. In the third epoch it achieves 60.20% accuracy. By adding one fully connect layer, the accuracy after 150 epochs is 97.6%. However, it takes 15 epochs for the neural network to get to 60% accuracy. 
 
-To achieve 99% accuracy, we have three **fully connected layers and two sigmoid layers** in the **neural network**. The **batch size** is 1024, and we have 150 **epochs**. The **learning rate** is 3000. The output of the first **fully connected layer** and second **fully connected layer** is 42. When we add the third layer, the final accuracy is 97.97 %, which does not improve much caused by gradient vanishing: when the input of sigmoid layer is small enough or large enough, the output would have only subtle change than the output from a close input.  
+ When we add the third layer, the final accuracy is 97.97 %, which does not improve much caused by gradient vanishing: when the input of sigmoid layer is small enough or large enough, the output would have only subtle change than the output from a close input.  
 
 There are many solutions to this problem, like replacing activation layer with function like ReLu, LeakyRelu, elu. One other efficient way is to use Cross-Entropy Loss function The formula of this function would like is 
 
@@ -18,7 +18,9 @@ The main reason why we use is its derivative is
 
 which would become h (theta, x) after it times the sigmoid function's derivative.
 
-Beside adding more fully connected layers, we could adjust parameters in the NN to revise it. 
+Beside adding more fully connected layers, we could adjust parameters in the NN to revise it. ------
+
+To achieve 99% accuracy, we have three **fully connected layers and two sigmoid layers** in the **neural network**. The **batch size** is 1024, and we have 150 **epochs**. The **learning rate** is 3000. The output of the first **fully connected layer** and second **fully connected layer** is 42.
  
 # How it work
 To implement machine learning, we use a typical model: the **Neural network** (NN). The basic linear model of NN is made by three main layers: which are the **input layer** (a1, a2, and a3 in the graph), the **network layer** (b1 and b2 in the graph), and the **output layer** (h1 and h2 in the layer). 

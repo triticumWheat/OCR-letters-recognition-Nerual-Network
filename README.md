@@ -34,5 +34,5 @@ To get b1 and b2, we need to multiply the **weights** to corresponding inputs an
 Theoretically, if we could get perfect **weight** and **bias** then the b1 and b2 would have a perfect output. So, we could say that the process of achieving the best output is the process of founding the best **bias** and **weight**. Since we have the expected result b1 and b2, we can compare it to the result get from the neural network to get a **loss**, which is also known as the **lost layer**, and use the loss to revise our **neural network**. Due to our result being linear, we need to use an **activation layer** to make the result become a non-linear one.
 
 # Sources
-All training photos and their labels are in "src". you can also find the specific paper about this neural network in "src".
+All training photos and their labels are in "src". 
 the NN.py is the training module, and the dataPreloading.py is converting photos into 289*1's list and packing them with their labels into .npy files. 
